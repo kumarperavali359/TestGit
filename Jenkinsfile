@@ -9,9 +9,6 @@ pipeline {
     }
     stages {
         stage ('Build') {
-            agent {
-              label 'build'
-            }
             steps {
                 dir ('source') {
                     sh '''mvn -Dmaven.test.failure.ignore=true clean install
