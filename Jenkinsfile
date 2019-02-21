@@ -4,8 +4,8 @@ pipeline {
         checkoutToSubdirectory('source')
     }
     tools {
-        maven 'Maven-3.3.9'
-        jdk 'JDK-8'
+        maven 'M2_HOME'
+        jdk 'JAVA_HOME'
     }
     stages {
         stage ('Build') {
